@@ -1,0 +1,25 @@
+#coding:utf-8
+from suanli1 import *
+from suanli2 import *
+jdpzxzd=pqh-jdpqss     #7-24
+pqkhmsd=(dygpql*biron)/(6*3600*hxmj)
+sjqss=gpqss*0.87*(1-shidu)*(1-0.65*shidu)
+pzxzd=pqh-sjqss
+cqdhjll1=ggqljxhzql-dejzrq-dytjflq-gytjflq-jrqcql6-dyjzrq     #7-25
+cqdhjll2=cqdhjll1-jrqcql5
+cqdhjll3=cqdhjll2-gyzflq1-gyzflq2-dyzflq1-dyzflq2-jrqcql4
+cqdhjll4=cqdhjll3-wmsd
+cqdhjll5=cqdhjll4-jrqcql3-gsbxqlj
+cqdhjll6=cqdhjll5-jrqcql2
+cqdhjll7=cqdhjll6-jrqcql1
+print("假定膨胀线终点:%f" %jdpzxzd)
+print("每一排汽口环面速度:%f" %pqkhmsd)
+print("实际汽损失:%f" %sjqss)
+print("膨胀线终点:%f" %pzxzd)
+print("抽汽点后级流量1:%f" %cqdhjll1)
+print("抽汽点后级流量2:%f" %cqdhjll2)
+print("高压缸排气流量:%f" %cqdhjll3)
+print("低压缸进气量:%f" %cqdhjll4)
+print("抽汽点后级流量3:%f" %cqdhjll5)
+print("抽汽点后级流量4:%f" %cqdhjll6)
+print("抽汽点后级流量5:%f" %cqdhjll7)
