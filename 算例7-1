@@ -1,0 +1,172 @@
+#coding:utf-8
+import xlrd
+import math
+data=xlrd.open_workbook('e:/qjsjk/hedianzhan qilunji.xlsx')
+table=data.sheets()[0]
+table = data.sheet_by_index(0)
+table = data.sheet_by_name(u'Sheet1')
+gsbxsll=table.cell(2,4).value
+gsbmfrkll=table.cell(3,4).value
+gsbmfhsl=table.cell(4,4).value
+zqfsqcsbh=table.cell(5,4).value
+rjcsbh=table.cell(6,4).value
+njsbxll=table.cell(7,4).value
+tuojrqssbxl=table.cell(8,4).value
+threejrqssbxl=table.cell(9,4).value
+sqcqqyq=table.cell(10,4).value
+h1=table.cell(11,4).value
+h2=table.cell(12,4).value
+fdjcl=table.cell(13,4).value
+hf06=table.cell(14,4).value
+hf16=table.cell(15,4).value
+hrh1=table.cell(16,4).value
+hd6=table.cell(17,4).value
+hrh2=table.cell(18,4).value
+wrh1=table.cell(19,4).value
+wrh2=table.cell(20,4).value
+h6=table.cell(21,4).value
+w1nj=table.cell(22,4).value
+c0=table.cell(23,4).value
+c1nj=table.cell(24,4).value
+cw=table.cell(25,4).value
+t1nj=table.cell(26,4).value
+pext=table.cell(27,4).value
+hf=table.cell(28,4).value
+h1nj=table.cell(29,4).value
+hfg=table.cell(30,4).value
+w1nf=table.cell(31,4).value
+hf05=table.cell(32,4).value
+hf15=table.cell(33,4).value
+hw5=table.cell(34,4).value
+hd5=table.cell(35,4).value
+hs5=table.cell(36,4).value
+hd61=table.cell(37,4).value
+wf04=table.cell(38,4).value
+hf04=table.cell(39,4).value
+hf14=table.cell(40,4).value
+hd51=table.cell(41,4).value
+hd52=table.cell(42,4).value
+wev10=table.cell(43,4).value
+hwv10=table.cell(44,4).value
+hd4=table.cell(45,4).value
+wmsd=table.cell(46,4).value
+hmds=table.cell(47,4).value
+ww4=table.cell(48,4).value
+hw4=table.cell(49,4).value
+hs4=table.cell(50,4).value
+hf13=table.cell(51,4).value
+h3=table.cell(52,4).value
+wc02=table.cell(53,4).value
+hc02=table.cell(54,4).value
+hc12=table.cell(55,4).value
+ww2=table.cell(56,4).value
+hw2=table.cell(57,4).value
+hc12=table.cell(58,4).value
+w12=table.cell(59,4).value
+h12=table.cell(60,4).value
+hs2=table.cell(61,4).value
+gsbxqlj=table.cell(62,4).value
+ws=table.cell(63,4).value
+hs=table.cell(64,4).value
+hw=table.cell(65,4).value
+w1nj1=table.cell(66,4).value
+c1nj1=table.cell(67,4).value
+cw1=table.cell(68,4).value
+c10=table.cell(69,4).value
+wss=table.cell(70,4).value
+hc01=table.cell(71,4).value
+hc11=table.cell(72,4).value
+hss=table.cell(73,4).value
+hd1=table.cell(74,4).value
+ggqljxhzql=table.cell(75,4).value
+gytjflq=table.cell(76,4).value
+dytjflq=table.cell(77,4).value
+dejzrq=table.cell(78,4).value
+gyzflq1=table.cell(79,4).value
+gyzflq2=table.cell(80,4).value
+dyzflq1=table.cell(81,4).value
+dyzflq2=table.cell(82,4).value
+dyjzrq=table.cell(83,4).value
+jrqcql6=table.cell(84,4).value
+jrqcql5=table.cell(85,4).value
+jrqcql4=table.cell(86,4).value
+h4=table.cell(87,4).value
+h5=table.cell(88,4).value
+jrqcql3=table.cell(89,4).value
+jrqcql2=table.cell(90,4).value
+jrqcql1=table.cell(91,4).value
+fdjclh=table.cell(92,4).value
+fdjdqss=table.cell(93,4).value
+fdjjxss=table.cell(94,4).value
+jdpqss=table.cell(95,4).value
+shidu=table.cell(96,4).value
+biron=table.cell(97,4).value
+hxmj=table.cell(98,4).value
+gpqss=table.cell(99,4).value
+zzgsll=gsbxsll+gsbmfrkll-gsbmfhsl
+xtbmxll=-(zqfsqcsbh-rjcsbh+njsbxll+tuojrqssbxl+threejrqssbxl)
+syzzqll=zzgsll-xtbmxll-sqcqqyq
+bmxlbfb=100*(xtbmxll/syzzqll)
+syrh=(syzzqll*h1-zzgsll*h2)/fdjcl
+wf06=zzgsll
+wf05=zzgsll
+wext6=(wf06*(hf06-hf16)-wrh1*(hrh1-hd6)-wrh2*(hrh2-hd6))/(h6-hd6)
+wd6=wext6+wrh1+wrh2
+w=w1nj*(hf-h1nj)
+w=w1nf*(hf-h1nj)/hfg
+wws=(w1nj*(c1nj-cw)-w*cw)/(cw-c0)
+ws5=(wf05*(hf05-hf15)-wws*(hw5-hd5)-wd6*(hd61-hd5))/(hs5-hd5)
+wext5=ws5+wws
+hext5=((ws5*hs5)+(wws*hw5))/wext5
+wd5=wd6+wext5
+ws4=(wf04*(hf04-hf14)-wd5*(hd51-hd52)-wev10*(hwv10-hd4)-wmsd*(hmds-hd4)-ww4*(hw4-hd4))/(hs4-hd4)
+wext4=ws4+ww4
+hext4=(ws4*hs4+ww4*hw4)/wext4
+wd4=wd5+wmsd+wext4+wev10
+w3=(gsbxsll*(hf14-hf13)-wd4*(hd4-hf13))/(h3-hf13)
+wext3=w3+gsbxqlj
+wf13=gsbxsll-wd4-w3
+ws2=(wc02*(hc02-hc12)-ww2*(hw2-hc12)+w12*(h12-hc12))/(hs2-hc12)
+wext=ws2+ww2
+hext2=((ws*hs)+(ww2+hw))/wext    #wenti
+wc12=wc02-wext+w12
+wd1=(w1nj1*(c1nj1-cw1))/(cw1-c0)     #7-17
+wext1=wd1-wss
+wc01=wc12
+hext1=(wc01*(hc01-hc11)-wss*(hss-hd1)+wext1*hd1)/wext1     #7-18
+w2=ggqljxhzql-gytjflq-dytjflq-dejzrq-gyzflq1-gyzflq2-dyzflq1-dyzflq2-dyjzrq-jrqcql6-jrqcql5-jrqcql4  #7-19
+zrzql=w2-wmsd     #7-20
+yjzrqjqh=h4-(wrh2*(h1-hrh2)+wrh1*(h5-hrh1))/zrzql     #7-21
+qsflqjqh=(zrzql*yjzrqjqh+wmsd*hmds)/w2
+dygpql=zrzql-jrqcql1-jrqcql2-jrqcql3     #7-22
+print("实验时主蒸汽流量:%f" %xtbmxll)
+print("实验时总蒸汽流量:%f" %syzzqll)
+print("不明泄漏量占实验总蒸汽流量百分比:%f" %bmxlbfb)
+print("实验热耗:%f" %syrh)
+print("6#加热器热平衡:%f" %wext6)
+print("6#加热器疏水量:%f" %wd6)
+print("w的变化量:%f" %w)
+print("取样点汽水混合物含水量:%f" %wws)
+print("5#加热器抽汽量:%f" %ws5)
+print("wext5:%f" %wext5)
+print("5#加热器混合蒸汽焓:%f" %hext5)
+print("5#加热器疏水量:%f" %wd5)
+print("ws4:%f" %ws4)
+print("wext4:%f" %wext4)
+print("hext4:%f" %hext4)
+print("4#加热器疏水:%f" %wd4)
+print("3#加热器抽气量:%f" %w3)
+print("wext3:%f" %wext3)
+print("wf13:%f" %wf13)
+print("ws2:%f" %ws2)
+print("总抽汽量wext:%f" %wext)
+print("总焓值hext2:%f" %hext2)
+print("wc12:%f" %wc12)
+print("wd1:%f" %wd1)
+print("wext1:%f" %wext1)
+print("抽汽管中汽水混合物焓值hext1:%f" %hext1)
+print("至汽水分离器的蒸汽量w2:%f" %w2)
+print("再热蒸汽量w3:%f" %zrzql)
+print("第一级再热器进汽焓h3:%f" %yjzrqjqh)
+print("汽水分离器的进汽焓h2:%f" %qsflqjqh)
+print("低压缸排气量:%f" %dygpql)
