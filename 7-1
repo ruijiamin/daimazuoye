@@ -1,0 +1,77 @@
+#coding:utf-8
+import xlrd
+data=xlrd.open_workbook('e:/qjsjk/zaire huire.xlsx')
+table=data.sheets()[0]
+table = data.sheet_by_index(0)
+table = data.sheet_by_name(u'Sheet1')
+wm=table.cell(2,4).value
+w7=table.cell(3,4).value
+w6=table.cell(4,4).value
+w5=table.cell(5,4).value
+whp=table.cell(6,4).value
+wd=table.cell(7,4).value
+wds=table.cell(8,4).value
+wmfzs=table.cell(9,4).value
+wmfls=table.cell(10,4).value
+wzwls=table.cell(11,4).value
+wgjwsl=table.cell(12,4).value
+wzjwsl=table.cell(13,4).value
+hf08=table.cell(18,4).value
+hf16=table.cell(19,4).value
+h7d=table.cell(20,4).value
+h6d=table.cell(16,4).value
+h6=table.cell(21,4).value
+hfd0=table.cell(14,4).value
+hfd1=table.cell(15,4).value
+hd=table.cell(17,4).value
+hf07=table.cell(22,4).value
+hf17=table.cell(23,4).value
+h7=table.cell(24,4).value
+wchbh=table.cell(25,4).value
+wczqli=table.cell(26,4).value
+hf04=table.cell(27,4).value
+hf14=table.cell(28,4).value
+h4=table.cell(29,4).value
+h4d=table.cell(30,4).value
+hf03=table.cell(31,4).value
+hf13=table.cell(32,4).value
+h3d=table.cell(33,4).value
+h3=table.cell(34,4).value
+hf02=table.cell(35,4).value
+hf12=table.cell(36,4).value
+h2d=table.cell(37,4).value
+h2=table.cell(38,4).value
+hs=table.cell(39,4).value
+h1d=table.cell(40,4).value
+h1=table.cell(41,4).value
+hf01=table.cell(42,4).value
+hf11=table.cell(43,4).value
+ws=table.cell(44,4).value
+wzzqll=table.cell(45,4).value
+w2flql=table.cell(46,4).value
+wzrrlq=table.cell(47,4).value
+w1zfglq=table.cell(48,4).value
+w1zfdlq=table.cell(49,4).value
+wcyzq=table.cell(50,4).value
+w7jrcq=table.cell(51,4).value
+w2zfglq=table.cell(52,4).value
+wddqlq=table.cell(53,4).value
+wf1=wm-wds+wmfzs-(wmfls+wzwls)-(wgjwsl+wzjwsl)
+print("wf1:%d" %wf1)
+import numpy as np
+a=[[hf07-hf17-h7+h7d,hf07-hf17,hf07-hf17],[hf08-hf16-h7d+h6d,hf08-hf16-h6+h6d,hf08-hf16],[h6d-hfd0,h6d-hfd0,hd-hfd0]]
+a=np.array(a)
+b=[-wf1*(hf07-hf17),-wf1*(hf08-hf16),wm*(hfd0-hfd1)]
+b=np.array(b)
+x=np.linalg.solve(a,b)
+w7=x[0]
+print("w7:%f"%w7)
+w6=x[1]
+print("w6:%f"%w6)
+wd=x[2]
+print("wd:%f"%wd)
+w5=wd-17913
+print("w5:%f"%w5)
+wf=w7+w6+wd+wf1
+print("最终给水流量：%f"%wf)
+
