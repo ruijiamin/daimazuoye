@@ -1,0 +1,18 @@
+#coding:utf-8
+from suanli7 import *
+wzhu=wf+wgjwsl-wchbh-wczqli
+print("wzhu:%f"%wzhu)
+w4=wm*(hf04-hf14)/(h4-h4d)
+print("w4:%f"%w4)
+w3=(wm*(hf03-hf13)-w4*(h4d-h3d))/(h3-h3d)
+print("w3:%f"%w3)
+w2=(wm*(hf02-hf12)-(w3+w4)*(h3d-h2d))/(h2-h2d)
+print("w2:%f"%w2)
+w1=(wm*(hf01-hf11)-(w4+w3+w2)*(h2d-h1d)-ws*(hs-h1d))/(h1-h1d)
+print("w1:%f"%w1)
+wlzrll=wzzqll-w2flql-wzrrlq-w1zfglq-w1zfdlq-wcyzq-w7jrcq-w2zfglq-wddqlq
+print("冷再热蒸汽流量:%f"%wlzrll)#有问题
+wzrzqll=wlzrll+wzjwsl
+print("热再热蒸汽流量:%f"%wzrzqll)
+wzyjql=wzrzqll+wzrrlq+w2zfglq
+print("中压缸进汽量：%f"%wzyjql)
