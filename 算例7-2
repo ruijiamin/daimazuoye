@@ -1,0 +1,48 @@
+#coding:utf-8
+from suanli1 import *
+zzqrlsrrl=ggqljxhzql*h1
+tjflqlsrrl=gytjflq*h1
+jrq6srrl=jrqcql6*h5
+jrq5srrl=jrqcql5*hmds
+jrq4srrl=jrqcql4*hext4
+flz4jrqssl=wmsd*hw4
+yjzrz6jrqssl=dyjzrq*hrh1
+ejzrz6jrqssl=dejzrq*hrh2
+jrqcqlsrrl3=jrqcql3*hext4
+gsbxqjyqlsrrl=gsbxqlj*hext4
+jrqcqlsrrl2=wext*hext2
+jrqcqlsrrl1=wext1*hext1
+tjflqlsrrl=dytjflq*hwv10     
+gyzflq1srrl=gyzflq1*qsflqjqh
+gyzflq2srrl=gyzflq2*qsflqjqh
+dyzflq1srrl=dyzflq1*qsflqjqh     #pdf有错
+dyzflq2srrl=dyzflq2*qsflqjqh 
+fdjclsrrl=fdjcl*fdjclh
+fdjdqsssrrl=fdjclh*fdjdqss
+fdjjxsssrrl=fdjclh*fdjjxss
+zscrl=fdjjxsssrrl+fdjdqsssrrl+fdjclsrrl+dyzflq2srrl+dyzflq1srrl+gyzflq2srrl+gyzflq1srrl+tjflqlsrrl+jrqcqlsrrl1+jrqcqlsrrl2+gsbxqjyqlsrrl+jrqcql3+ejzrz6jrqssl+yjzrz6jrqssl+flz4jrqssl+jrq4srrl+jrq5srrl+jrq6srrl+tjflqlsrrl
+jrl=zzqrlsrrl-zscrl
+pqh=jrl/dygpql
+print("主蒸汽输入热量:%f" %zzqrlsrrl)
+print("调节阀漏汽量输入热量:%f" %tjflqlsrrl)
+print("6#加热器输入热量:%f" %jrq6srrl)
+print("5#加热器输入热量:%f" %jrq5srrl)
+print("4#加热器输入热量:%f" %jrq4srrl)
+print("由汽水分离器至4#加热器的疏水量输入热量:%f" %flz4jrqssl)
+print("由第一级再热器至6#加热器的疏水量的输入热量:%f" %yjzrz6jrqssl)
+print("由第二级再热器至6#加热器的疏水量的输入热量:%f" %ejzrz6jrqssl)
+print("3#加热器抽汽量输入热量:%f" %jrqcql3)
+print("给水泵小汽机用汽量输入热量:%f" %gsbxqjyqlsrrl)
+print("2#加热器抽汽量输入热量:%f" %jrqcql2)
+print("1#加热器抽汽量输入热量:%f" %jrqcql1)
+print("调节阀漏气量输入热量:%f" %tjflqlsrrl)
+print("1#高压轴封漏气量输入热量:%f" %gyzflq1srrl)
+print("2#高压轴封漏气量输入热量:%f" %gyzflq2srrl)
+print("1#低压轴封漏气量输入热量:%f" %dyzflq1srrl)
+print("2#低压轴封漏气量输入热量:%f" %dyzflq2srrl)
+print("发电机出力输入热量:%f" %fdjclsrrl)
+print("发电机电气损失输入热量:%f" %fdjdqsssrrl)
+print("发电机机械损失输入热量:%f" %fdjjxsssrrl)
+print("总输出热量:%f" %zscrl)
+print("净热量:%f" %jrl)
+print("低压缸排气焓:%f" %pqh)
