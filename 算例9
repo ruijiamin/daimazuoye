@@ -1,0 +1,36 @@
+#coding:utf-8
+import xlrd
+import math
+data=xlrd.open_workbook('e:/qjsjk/kebiansu jixiequdong qlj.xlsx')
+table=data.sheets()[0]
+table = data.sheet_by_index(0)
+table = data.sheet_by_name(u'Sheet1')
+w7=table.cell(2,4).value
+wpl=table.cell(3,4).value
+w=table.cell(4,4).value
+p=table.cell(5,4).value
+rkyl=table.cell(6,4).value
+dqyl=table.cell(7,4).value
+gfrkyl=table.cell(8,4).value
+vs=table.cell(9,4).value
+vt=table.cell(10,4).value
+qljrkyl=table.cell(11,4).value
+qljrkwd=table.cell(12,4).value
+qljpqyl=table.cell(13,4).value
+qljzs=table.cell(14,4).value
+syrh=table.cell(15,4).value
+sjqh=table.cell(16,4).value
+w1=w7+wpl-w
+qh=w1/p
+ps=gfrkyl+dqyl
+pt=rkyl
+ws=w1*math.sqrt((ps*vt)/(pt*vs))     #9-8
+xzxs=qljrkyl*qljrkwd*qljpqyl*qljzs     #9-9
+xzhsyqh=syrh/xzxs     #9-10
+xzhdsyfh=ws/xzhsyqh     #9-11
+print("汽轮机进气量:%f" %w1)
+print("汽耗:%f" %qh)
+print("修正后的主蒸汽流量:%f" %ws)
+print("整合修正系数:%f" %xzxs)
+print("修正后的实验热耗:%f" %xzhsyqh)
+print("修正后的实验负荷:%f" %xzhdsyfh)
