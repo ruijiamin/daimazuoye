@@ -1,0 +1,32 @@
+#coding:utf-8
+import xlrd
+import math
+data=xlrd.open_workbook('e:/qjsjk/wanquanpenzhang.xlsx')
+table=data.sheets()[0]
+table = data.sheet_by_index(0)
+table = data.sheet_by_name(u'Sheet1')
+wzgsll=table.cell(2,4).value
+rjcsl=table.cell(3,4).value
+cflsl=table.cell(4,4).value
+djcl=table.cell(5,4).value
+qyss=table.cell(6,4).value
+jdxz=table.cell(7,4).value
+gkxss=table.cell(8,4).value
+ps=table.cell(9,4).value
+pt=table.cell(10,4).value
+vt=table.cell(11,4).value
+vs=table.cell(12,4).value
+xzxs=table.cell(13,4).value
+wzqll=wzgsll-rjcsl+cflsl
+xzhfdjcl=djcl+qyss-jdxz-gkxss
+syqh=wzgsll/xzhfdjcl
+llxzxs=math.sqrt((ps*vt)/(pt*vs))
+xzhzzqll=wzqll*llxzxs
+wdgkqh=xzhzzqll/xzxs
+
+print("实验时主蒸汽流量:%f" %wzqll)
+print("修正到规定工况下发电机出力:%f" %xzhfdjcl)
+print("实验汽耗:%f" %syqh)
+print("主蒸汽流量修正系数:%f" %llxzxs)
+print("修正后主蒸汽流量:%f" %xzhzzqll)
+print("修正后的额定运行工况下汽耗:%f" %wdgkqh)
